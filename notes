@@ -1,0 +1,91 @@
+Phase 3
+
+082421 Study Group
+    - Questions everyone has about the shift to backend development:
+        - How much more difficult is Ruby compared to React?
+            - More in line with learning JavaScript than React. Won't necessarily be more/less difficult, but it will be different. There are similarities between 
+              Ruby and JavaScript that you'll notice. 
+
+        - Is the rest of the bootcamp going to focus on Ruby?
+            - Ruby, then Rails (a framework for Ruby).
+    
+        - Why did Flatiron choose Ruby?
+            - No clue. 
+
+    - What is Ruby?
+        - Object oriented language
+        - Backend language
+
+    - Let's define the following terms, and identify their JS counterparts
+        - puts/print --> console.log()/line break provided for each puts statement
+        - pp --> 'pretty printing'/use when logging hashes to the console
+        - p --> print + inspect 
+        - nil --> null & undefined 
+
+    - What is a method?
+        - Ruby's version of functions (to reference JavaScript)
+        - Methods implicitly return the last line of code 
+            -If there's nothing, our return is 'nil'
+    
+    - Booleans
+        - What values are considered falsy in Ruby? (Hint: There are only two (2)!)
+            - False & Nil 
+
+    - Variable Declaration
+        - snake_cased 
+        - scoped differently than JS variables
+            - declared wherever they're supposed to live
+                - if declared outside of a method, they cannot be used in the method
+                    - can be passed in as a argument, but that's it
+        -concrete example of class vs instance variable methods on Thursday (8/26)
+    
+    - Operators
+        - === !== (JS) / == != (Ruby)
+
+082621 Study Group
+
+    - Conditionals
+        - if statement  
+            - Ruby: if condition
+                        execute this  
+                    end 
+        - if/elsif/else
+            - JS: if (condition) { block } else if (anotherCondition) { block } else { block }
+            - Ruby: if condition 
+                        execute this
+                    elsif another_condition
+                        execute this instead
+                    else 
+                        execute this 
+                    end 
+        
+        - unless
+            - the opposite of an 'if' statement!
+
+        - case statements  
+            - JS switch statements
+                - case thing_to_evaluate
+                  when some_condition_is_met 
+                    execute this
+                  when some_other_condition_is_met
+                    execute this
+                  else
+                    execute this
+                  end 
+
+        - statement modifiers!
+            - if and unless! 
+
+083121 Study Group
+
+    - Loops
+        - while 
+
+
+        - until 
+
+
+        - times
+
+        
+        - each
