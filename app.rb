@@ -20,35 +20,47 @@ end
 # weather_conditions =  'sunny' 
 
 # if statement
-    outerwear = if weather_conditions == 'sunny'
-                    'shorts and sandals'
-                elsif weather_conditions == 'snowing'
-                    'robe'
-                elsif weather_conditions == 'raining'
-                    'poncho and rain boots'
-                else
-                    'jeans and a jacket'
-                end
+#     outerwear = if weather_conditions == 'sunny'
+#                     'shorts and sandals'
+#                 elsif weather_conditions == 'snowing'
+#                     'robe'
+#                 elsif weather_conditions == 'raining'
+#                     'poncho and rain boots'
+#                 else
+#                     'jeans and a jacket'
+#                 end
 
-# case 
-     outerwear = case weather_conditions
-                when 'sunny' then 'shorts and sandals'
-                when 'snowing' then 'robe'
-                when 'raining' then 'poncho and rain boots'
-                else 'jeans and a jacket'
-                end
+# # case 
+#      outerwear = case weather_conditions
+#                 when 'sunny' then 'shorts and sandals'
+#                 when 'snowing' then 'robe'
+#                 when 'raining' then 'poncho and rain boots'
+#                 else 'jeans and a jacket'
+#                 end
     
 
 # let's use a statement modifier to put a statement in the console
 
 # unless our outerwear is set to 'robe', we should say we can throw something on today
-puts "I'll wear #{outerwear} today." unless outerwear == 'robe'
+#puts "I'll wear #{outerwear} today." unless outerwear == 'robe'
 
 # if our outerwear is set to 'robe', we should say we can stay in since the weather's too rough
-puts "The weather's too rough today. Going to stay inside." if outerwear == 'robe'
+#puts "The weather's too rough today. Going to stay inside." if outerwear == 'robe'
 
 
 # THE MAJOR CHALLENGE -> Let's combine all of the things we just did in a single method that'll output our outerwear for each weather condition
-# weather_conditions =  ['raining', 'snowing', 'sunny', 'cloudy']
+weather_conditions =  ['raining', 'snowing', 'sunny', 'cloudy']
 
+def weather_update weather_conditions
+    weather_conditions.each do |w|
+    outerwear = case w
+        when 'sunny' then 'shorts and sandals'
+        when 'snowing' then 'robe'
+        when 'raining' then 'poncho and rain boots'
+        else 'jeans and a jacket'
+    end
+    # binding.pry
+end
+end
+weather_update weather_conditions          
 # binding.pry
